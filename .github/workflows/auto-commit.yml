@@ -1,6 +1,6 @@
 on:
   schedule:
-    - cron: '0 11 * * *' # 매일 UTC 4시 = KST 13시
+    - cron: '0 4 * * *' # 매일 UTC 4시 = KST 13시
   workflow_dispatch: # 수동 실행도 가능하게
 
 jobs:
@@ -13,8 +13,8 @@ jobs:
       
       - name: Set up git config
         run: |
-          git config --global user.email "aa"
-          git config --global user.name "aa"
+          git config --global user.email "tommy08190@naver.com"
+          git config --global user.name "sunmin_hwang"
 
       - name: Pull latest changes
         run: git pull --rebase
